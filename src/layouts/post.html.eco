@@ -3,6 +3,7 @@ layout: default
 ---
 
 <article id="post" class="post">
+	<% if @document.fimg?: %><img class="img-responsive img-rounded" src="/images/<%= @document.fimg %>"/><% end %>
 	<h1><%= @document.title %></h1>
 	<div class="post-content"><%- @content %></div>
 </article>
